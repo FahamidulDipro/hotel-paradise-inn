@@ -14,6 +14,7 @@ const Login = () => {
         <div>
            <h1>Login</h1> 
            <Button variant='primary' onClick={()=>handleGoogleSignIn()}>SignIn with Google</Button>
+           
         </div>
     );
 };
