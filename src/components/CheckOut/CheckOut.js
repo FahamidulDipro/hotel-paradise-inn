@@ -23,6 +23,9 @@ const CheckOut = () => {
           <Button variant="primary">Checkout</Button>
         </Card.Body>
       </Card>
+      {
+        console.log(roomDetails)
+      }
     </div>
   );
 };

@@ -13,6 +13,7 @@ import NotFound from "./components/NotFound/NotFound";
 import { createContext } from "react";
 import useLoadData from "./useLoadData";
 import Room from "./components/Room/Room";
+import AuthRequire from "./components/AuthRequire/AuthRequire";
 
 export const LoadHotelsContext = createContext();
 
@@ -26,9 +27,14 @@ function App() {
           <Route path="/" element={<Home></Home>}></Route>
           <Route path="/home" element={<Home></Home>}></Route>
           <Route path="/rooms" element={<Rooms></Rooms>}></Route>
+
           <Route
             path="/checkout/:roomId"
-            element={<CheckOut></CheckOut>}
+            element={
+              <AuthRequire>
+                <CheckOut></CheckOut>
+              </AuthRequire>
+            }
           ></Route>
 
           <Route path="/register" element={<Register></Register>}></Route>

@@ -1,4 +1,3 @@
-import { jsonEval } from '@firebase/util';
 import React, { useContext, useEffect, useState } from 'react';
 import { Container, Row } from 'react-bootstrap';
 import { LoadHotelsContext } from '../../App';

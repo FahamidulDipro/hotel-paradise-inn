@@ -21,7 +21,7 @@ const Room = (props) => {
             {price}$
           </Card.Text>
           <Button variant="primary" onClick={() => showId()}>
-            Checkout
+            Select
           </Button>
         </Card.Body>
       </Card>
